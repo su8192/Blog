@@ -43,7 +43,7 @@ export default function Page() {
 									ease: "easeInOut"
 								}
 							}}
-							className='card overflow-hidden w-[300px] h-[100px]'
+							className='card overflow-hidden h-[150px]'
 						>
 						<Link href={`/blog/${article.slug}`} className='block h-full flex items-center p-3'>
 								{article.cover && (
