@@ -19,6 +19,8 @@ export type PushBlogParams = {
 		hidden?: boolean
 		category?: string
 		downloadLinks?: Array<{ name: string; url: string }>
+		passwordProtected?: boolean
+		password?: string
 	}
 	cover?: ImageItem | null
 	images?: ImageItem[]
@@ -129,7 +131,9 @@ export async function pushBlog(params: PushBlogParams): Promise<void> {
 		cover: coverPath,
 		hidden: form.hidden,
 		category: form.category,
-		downloadLinks: form.downloadLinks
+		downloadLinks: form.downloadLinks,
+		passwordProtected: form.passwordProtected,
+		password: form.password
 	}
 
 	const configBlob = await createBlob(token, GITHUB_CONFIG.OWNER, GITHUB_CONFIG.REPO, toBase64Utf8(JSON.stringify(config, null, 2)), 'base64')
@@ -154,7 +158,9 @@ export async function pushBlog(params: PushBlogParams): Promise<void> {
 			cover: coverPath,
 			hidden: form.hidden,
 			category: form.category,
-			downloadLinks: form.downloadLinks
+			downloadLinks: form.downloadLinks,
+			passwordProtected: form.passwordProtected,
+			password: form.password
 		},
 		GITHUB_CONFIG.BRANCH
 	)
