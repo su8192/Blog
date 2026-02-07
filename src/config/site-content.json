@@ -63,14 +63,14 @@
 			"order": 3
 		}
 	],
-	"clockShowSeconds": false,
+	"clockShowSeconds": true,
 	"summaryInContent": false,
 	"isCachePem": true,
 	"hideEditButton": false,
 	"enableCategories": true,
 	"currentHatIndex": 9,
 	"hatFlipped": false,
-	"enableChristmas": true,
+	"enableChristmas": false,
 	"enablePasswordAccess": true,
 	"passwordAccessCategories": [
 		"Chara",
