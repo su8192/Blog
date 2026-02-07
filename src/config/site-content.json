@@ -26,9 +26,13 @@
 		{
 			"id": "852eccdeaa21e3b7",
 			"url": "/images/art/852eccdeaa21e3b7.png"
+		},
+		{
+			"id": "e635b768b86a6cff",
+			"url": "/images/art/e635b768b86a6cff.jpeg"
 		}
 	],
-	"currentArtImageId": "852eccdeaa21e3b7",
+	"currentArtImageId": "e635b768b86a6cff",
 	"backgroundImages": [
 		{
 			"id": "",
@@ -64,7 +68,7 @@
 	"isCachePem": true,
 	"hideEditButton": false,
 	"enableCategories": true,
-	"currentHatIndex": 3,
+	"currentHatIndex": 9,
 	"hatFlipped": false,
 	"enableChristmas": true,
 	"enablePasswordAccess": true,
